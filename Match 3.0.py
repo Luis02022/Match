@@ -2,12 +2,17 @@ import os
 
 os.system("cls || clear")
 
-dia = int(input("Escolha um dia da semana de 1 á 7:"))
 
+os.system("cls || clear")
 while True:
+ os.system("cls || clear")
+
+ dia = int(input("Escolha um dia da semana de 1 á 7:"))
+ 
  match(dia):
    case 1:
       print("Domingo")
+      print("Final de semana")
       break
    case 2: 
       print("Segunda-Feira") 
@@ -26,7 +31,8 @@ while True:
       break
    case 7:   
       print("Sábado")
+      print("Final de semana")
       break
    case _:
-       print("Opção inválida")
-       break
+       input("Opção inválida")
+       
